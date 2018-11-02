@@ -1,0 +1,101 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+
+.header {height: 700px;}
+
+
+.header-container{position: relative; display: block; height: 726px; margin-top: -10px; margin-right: -15px; margin-left: -15px;  }
+
+.background-image {background-position: center center; background-size: cover; background-repeat: no-repeat;  }
+
+.nav-continer{position: absolute; top: 0;left: 0;right: 0;overflow: hidden;}
+
+.navbar-nononsense { text-align: center; border: none;border-radius: 0;min-height: auto;  background: #ffff;opacity: 0.5; }
+
+.navbar-default .navbar-nav li a {color: red;}
+
+.navbar-nononsense li a { text-transform: uppercase;  font-size: 15px;  }
+
+/*.footer {position: relative;left: 0;bottom: 0;color: red;}*/
+
+.media-icon-continer{position: fixed;left: 0;bottom: 0;width: 100%;background: white;color: white;text-align: center;}
+
+.media-icon-continer p {font-family: "Raleway", sans-serif; color: #00cca3; text-align: center;}
+
+.media-icon-continer button { background: #00cca3; text-align: center; color: white; }
+
+.jumbotron-style{margin-top: 500px;background: white;}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+  margin-right: 25px;
+  border-radius: 40%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  /*background: #3B5998;*/
+  color: #00cca3;
+}
+
+.fa-twitter {
+  /*background: #55ACEE;*/
+  color: #00cca3;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  /*background: #007bb5;*/
+  color: #00cca3;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  /*background: #125688;*/
+  color: #00cca3;
+}
+
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    
+    .navbar .navbar-collapse {
+        text-align: right;
+    }
+    .image_header img{width: 100%; height: auto; margin-top: -45%; }
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+}
