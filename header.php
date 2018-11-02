@@ -43,33 +43,24 @@
                           <div class="col-xs-12 col-sm-4">
                              <div class="jumbotron ">
                                 <?php 
-                                  $args = array(
-                                                'type' => 'post',
-                                                'posts_per_page' => 1,
-                                                'category_in' =>array(19),
-                                                'category_not_in'=> array(31,17)
-                                              );
+                          
 
-                                  
+                           if( have_posts() ):
+                            
+                            while( have_posts() ): the_post(); 
+                          ?>
 
-                                   $lastBlog = new WP_Query($args);
-                                   if( $lastBlog->have_posts() ):
-          
-                                      while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
-                                        
-                                        <div class="col-xs-12 col-sm-4">
-                                        
-                                          <?php get_template_part('content','featured'); ?>
-                                        
-                                        </div>
-                                      
-                                      <?php endwhile;
-                                      
-                                    endif;
-                                    
-                                    wp_reset_postdata();
-                                      
-                                  ?>
+                            <?php 
+
+                            get_template_part('content') 
+                            ?>
+
+                            <?php 
+                          endwhile;
+                            
+                          endif;
+                              
+                          ?>
                                 </div>
                              </div>
 
